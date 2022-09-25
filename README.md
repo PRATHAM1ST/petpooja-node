@@ -6,6 +6,4 @@
 
 ### `npm install`
 
-### `cd ..`
-
 ### `npm start`

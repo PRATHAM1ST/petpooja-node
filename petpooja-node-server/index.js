@@ -2,14 +2,10 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 var bodyParser = require("body-parser");
-const { application } = require("express");
 const port = "3001";
 
 // create application/json parser
 var jsonParser = bodyParser.json();
-
-// create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // Configuration database
 const db = mysql.createConnection({
