@@ -1,0 +1,39 @@
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.blackbg {
+    background-color: black;
+    color: white;
+}
+
+.navi {
+    position: fixed;
+    width: 250px;
+}
+
+.main {
+    margin-left: 250px;
+}
+
+.height100 {
+    height: 100vh !important;
+}
+
+.navitems {}
+
+.active {
+    background-color: #818181;
+}
+
+.foodtable {
+    background-color: #818181;
+    color: white;
+    width: 200px;
+}

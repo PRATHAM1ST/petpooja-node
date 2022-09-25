@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Admin from "./Admin/Admin";
+import TableDetails from "./Admin/TableDetails";
+import FoodItems from "./Admin/FoodItems";
+import Container from "./Container";
+import Bill from "./Admin/Bill";
+import EditFood from "./Admin/EditFood";
+import Cook from "./Cook/Cook";
+import Manager from "./Manager/Manager";
+import Ordertable from "./Manager/Ordertable";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Container />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/tabledetails/:tableId" element={<TableDetails />} />
+        <Route path="/fooditems" element={<FoodItems />} />
+        <Route path="/bill/:tableId" element={<Bill />} />
+        <Route path="/editfood/:foodId" element={<EditFood />} />
+        <Route path="/cook" element={<Cook />} />
+        <Route path="/manager" element={<Manager />} />
+        <Route path="/ordertable/:tableId" element={<Ordertable />} />
+      </Routes>
     </div>
   );
 }
