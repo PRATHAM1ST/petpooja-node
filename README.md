@@ -1,9 +1,23 @@
 # Getting Started with Petpooja App
 
-### `npm install`
+## Install XAMPP
 
-### `cd petpooja-node-server`
+`https://www.apachefriends.org/`
 
-### `npm install`
+<br>
 
-### `npm start`
+## Goto
+
+`C:\xampp\htdocs`
+
+<br>
+
+## Run this code in the integrated terminal, Line by Line
+
+#### `> npm install`
+
+#### `> cd petpooja-node-server`
+
+#### `> npm install`
+
+#### `> npm start`
